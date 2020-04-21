@@ -225,6 +225,15 @@ body {
           flex-flow: row wrap;
 }
 
+@media (max-width: 760px) {
+  .ness-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 650px;
+  }
+}
+
 .ness-header .ness-container {
   display: -webkit-box;
   display: -ms-flexbox;
