@@ -28,3 +28,30 @@ html {
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+
+.ness-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+  background-color: #232323;
+  -webkit-transition: width 0.5s ease, -webkit-clip-path;
+  transition: width 0.5s ease, -webkit-clip-path;
+  transition: clip-path, width 0.5s ease;
+  transition: clip-path, width 0.5s ease, -webkit-clip-path;
+  width: 50%;
+  height: 50%;
+}
+
+.ness-navbar .ness-navbar-container .ness-navbar-logo {
+  width: 50%;
+  position: relative;
+  left: 4.5rem;
+  top: -1rem;
+}
+
+.ness-navbar .ness-navbar-container .ness-navbar-menu {
+  opacity: 0;
+  pointer-events: none;
+}
