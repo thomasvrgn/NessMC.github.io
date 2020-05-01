@@ -24,6 +24,12 @@ body {
   height: 500px;
 }
 
+@media (max-width: 960px) {
+  .ness-navbar {
+    position: relative;
+  }
+}
+
 .ness-navbar.ness-navbar-scrolled {
   width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -34,7 +40,7 @@ body {
 @media (max-width: 960px) {
   .ness-navbar.ness-navbar-scrolled {
     height: unset;
-    position: relative;
+    position: fixed;
   }
 }
 
