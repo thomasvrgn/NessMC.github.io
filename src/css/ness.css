@@ -27,6 +27,12 @@
   height: 75px;
 }
 
+@media (max-width: 960px) {
+  .ness-navbar.ness-navbar-scrolled {
+    height: unset;
+  }
+}
+
 .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-logo {
   display: none;
 }
@@ -46,6 +52,12 @@
   height: 75px;
 }
 
+@media (max-width: 960px) {
+  .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu {
+    height: unset;
+  }
+}
+
 .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +71,14 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 0;
           flex: 1 0;
+}
+
+@media (max-width: 960px) {
+  .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
 }
 
 .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-item .ness-navbar-link {
