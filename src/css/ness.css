@@ -27,6 +27,67 @@
   height: 75px;
 }
 
+.ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-logo {
+  display: none;
+}
+
+.ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu {
+  opacity: 1;
+  pointer-events: all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 50%;
+  margin: 0 auto;
+  height: 75px;
+}
+
+.ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+.ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-item .ness-navbar-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  height: 75px;
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: 300;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-item .ness-navbar-link:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .ness-navbar .ness-navbar-container .ness-navbar-logo {
   position: absolute;
   top: 25%;
@@ -42,3 +103,4 @@
   opacity: 0;
   pointer-events: none;
 }
+/*# sourceMappingURL=ness.css.map */
