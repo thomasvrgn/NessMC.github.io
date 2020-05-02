@@ -185,6 +185,11 @@ body {
   font-size: 4rem;
   -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+}
+
+.ness-navbar .ness-navbar-container .ness-navbar-logo:hover {
+  opacity: 0.5;
 }
 
 .ness-navbar .ness-navbar-container .ness-navbar-menu {
