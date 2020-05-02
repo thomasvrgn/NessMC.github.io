@@ -20,8 +20,8 @@ body {
   background-color: #232323;
   -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  width: 50%;
-  height: 50%;
+  width: 500px;
+  height: 500px;
 }
 
 .ness-navbar.ness-navbar-scrolled {
