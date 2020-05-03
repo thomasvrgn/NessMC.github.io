@@ -34,6 +34,7 @@ body {
 @media (max-width: 960px) {
   .ness-navbar.ness-navbar-scrolled {
     height: unset;
+    position: relative;
   }
 }
 
@@ -49,7 +50,7 @@ body {
 
 @media (max-width: 960px) {
   .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-list {
-    display: none !important;
+    display: none;
   }
   .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-button {
     display: -webkit-box !important;
@@ -60,9 +61,7 @@ body {
 
 @media (max-width: 960px) {
   .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu.ness-navbar-opened .ness-navbar-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: calc(75px * 5);
   }
 }
 
@@ -84,13 +83,13 @@ body {
 .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-list {
   opacity: 1;
   pointer-events: all;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 50%;
   margin: 0 auto;
   height: 75px;
@@ -98,7 +97,9 @@ body {
 
 @media (max-width: 960px) {
   .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-list {
-    height: unset;
+    height: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
 }
 
@@ -174,6 +175,12 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 960px) {
+  .ness-navbar.ness-navbar-scrolled .ness-navbar-container .ness-navbar-menu .ness-navbar-list .ness-navbar-item .ness-navbar-link:hover::before {
+    opacity: 0;
+  }
+}
+
 .ness-navbar .ness-navbar-container .ness-navbar-logo {
   position: absolute;
   top: 25%;
@@ -196,4 +203,3 @@ body {
   opacity: 0;
   pointer-events: none;
 }
-/*# sourceMappingURL=ness.css.map */
