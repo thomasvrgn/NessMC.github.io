@@ -20,7 +20,6 @@ body {
   background-color: #232323;
   -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  background-image: url("../img/logo.png");
   background-repeat: no-repeat;
   background-size: 60%;
   width: 500px;
@@ -212,4 +211,47 @@ body {
 .ness-navbar .ness-navbar-container .ness-navbar-menu {
   opacity: 0;
   pointer-events: none;
+}
+
+.ness-header {
+  position: relative;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.ness-header .ness-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ness-header .ness-container .ness-text {
+  text-align: center;
+}
+
+.ness-header .ness-container .ness-text .ness-title {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.ness-header .ness-container .ness-text .ness-description {
+  margin: 1rem 0 0 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
 }
