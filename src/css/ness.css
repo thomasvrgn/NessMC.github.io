@@ -223,6 +223,19 @@ body, html {
   background-color: #24292e;
 }
 
+.ness-main .ness-wrapper {
+  padding: 1rem 0;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.ness-main .ness-wrapper .ness-letter {
+  font-size: 5rem;
+  color: rgba(200, 200, 200, 0.25);
+  font-weight: 800;
+}
+
 .ness-main .ness-section {
   height: 100%;
   display: -webkit-box;
@@ -235,4 +248,5 @@ body, html {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
+  background: #323232;
 }
