@@ -238,9 +238,72 @@ body, html {
   background: #232323;
 }
 
-.ness-main .ness-section .ness-test {
-  position: -webkit-sticky;
-  position: sticky;
+.ness-main .ness-section.ness-gallery .ness-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  position: relative;
+}
+
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid {
+  width: 75%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+      grid-template-areas: "palamazon palamazon entasia entasia" "objective objective entasia entasia" "objective objective popscript popscript" "other other other other";
+}
+
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item {
+  background-color: #414141;
+}
+
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-palamazon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: palamazon;
+}
+
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-entasia {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: entasia;
+}
+
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-objective {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: objective;
+}
+
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-popscript {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: popscript;
+}
+
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-other {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: other;
 }
 
 ::-webkit-scrollbar {
