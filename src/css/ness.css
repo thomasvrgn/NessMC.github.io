@@ -238,6 +238,13 @@ body, html {
   background: #232323;
 }
 
+.ness-main .ness-section.ness-gallery .section-title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  color: white;
+}
+
 .ness-main .ness-section.ness-gallery .ness-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,8 +266,8 @@ body, html {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 3fr 1fr 3fr;
-      grid-template-rows: 3fr 1fr 3fr;
+  -ms-grid-rows: 4fr 1fr 4fr;
+      grid-template-rows: 4fr 1fr 4fr;
   gap: 1rem;
       grid-template-areas: "palamazon palamazon entasia-background entasia-background" "palamazon-background palamazon-background entasia-background entasia-background" "palamazon-background palamazon-background entasia entasia";
 }
