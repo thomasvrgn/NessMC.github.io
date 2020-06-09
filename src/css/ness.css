@@ -99,14 +99,14 @@ body, html {
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-title::after {
   content: '';
   position: absolute;
-  bottom: -17.5px;
+  bottom: -32.5px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border: solid white 5px;
   z-index: -3;
-  width: 350px;
-  height: 125%;
+  width: 550px;
+  height: 150%;
 }
 
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-paragraph {
@@ -115,12 +115,13 @@ body, html {
   color: white;
   font-size: 2rem;
   font-family: monospace;
+  top: 12.5px;
 }
 
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-paragraph::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -12.5px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
