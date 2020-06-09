@@ -41,6 +41,7 @@ body, html {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
+  height: 100%;
   background: #232323;
 }
 
@@ -109,6 +110,13 @@ body, html {
   height: 150%;
 }
 
+@media (max-width: 768px) {
+  .ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-title::after {
+    width: 0;
+    height: 0;
+  }
+}
+
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-paragraph {
   position: relative;
   z-index: 5;
@@ -138,6 +146,19 @@ body, html {
           flex: 1 0 calc(100% / 3);
 }
 
+@media (max-width: 768px) {
+  .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    padding: 0 1rem;
+  }
+}
+
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button {
   margin: 0 1rem;
   color: white;
@@ -147,6 +168,24 @@ body, html {
   padding: 1rem 2rem;
   -webkit-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
+}
+
+@media (max-width: 768px) {
+  .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.5rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button svg {
@@ -182,4 +221,18 @@ body, html {
 
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:focus.ness-github {
   background-color: #24292e;
+}
+
+.ness-main .ness-section {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
