@@ -80,7 +80,7 @@ body, html {
 }
 
 .ness-main .ness-header .ness-wrapper .ness-container div {
-  margin: 2rem 0;
+  margin: 3.5rem 0;
 }
 
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-text {
@@ -133,6 +133,52 @@ body, html {
 
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
+      -ms-flex: 1 0 calc(100% / 3);
+          flex: 1 0 calc(100% / 3);
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #414141;
+  padding: 1rem 2rem;
+  -webkit-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button svg {
+  vertical-align: middle;
+  font-size: 1.75rem;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button .ness-button-name {
+  margin: 0 0 0 0.5rem;
+  margin-top: 1px;
+  vertical-align: middle;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:hover.ness-discord {
+  background-color: #7289da;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:hover.ness-twitter {
+  background-color: #1da1f2;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:hover.ness-github {
+  background-color: #2b3137;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:focus.ness-discord {
+  background-color: #687cc5;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:focus.ness-twitter {
+  background-color: #0084b4;
+}
+
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:focus.ness-github {
+  background-color: #24292e;
 }
