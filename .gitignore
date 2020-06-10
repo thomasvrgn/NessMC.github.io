@@ -1,2 +1,4 @@
 *.scss
 src/css/components/
+*.map
+.idea
