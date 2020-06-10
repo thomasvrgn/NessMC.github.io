@@ -213,6 +213,7 @@ body, html {
 @media (max-width: 980px) {
   .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-text {
     text-align: center;
+    width: 100%;
   }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-text .ness-title {
@@ -236,6 +237,11 @@ body, html {
     transform: translateX(-50%);
   }
 }
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-text .ness-title {
+    font-size: 1.5rem;
+  }
+}
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-text .ness-paragraph {
   color: #f0f0f0;
   margin-bottom: 1rem;
@@ -246,6 +252,11 @@ body, html {
   flex-flow: row wrap;
   margin: 2rem auto 0;
   width: fit-content;
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-text .ness-buttons {
+    justify-content: center;
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-text .ness-buttons .ness-button {
   display: flex;
@@ -264,6 +275,11 @@ body, html {
   margin: 0 0 0 1rem;
   text-decoration: none;
   font-weight: 500;
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-text .ness-buttons .ness-button {
+    margin: 1rem 0;
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-container {
   position: absolute;
@@ -287,6 +303,11 @@ body, html {
   font-weight: 800;
   color: white;
 }
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item .ness-container .ness-name {
+    font-size: 1.5rem;
+  }
+}
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-palamazon {
   grid-area: palamazon;
 }
@@ -303,7 +324,7 @@ body, html {
 }
 
 ::-webkit-scrollbar {
-  width: 25px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
