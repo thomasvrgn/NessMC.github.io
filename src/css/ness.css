@@ -148,15 +148,18 @@ body, html {
   background-color: #24292e;
 }
 .ness-main .ness-section {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-flow: row wrap;
   flex: 1 0 100%;
   background: #232323;
 }
+.ness-main .ness-section.ness-gallery {
+  align-items: unset;
+}
 .ness-main .ness-section.ness-gallery .section-title {
   text-align: center;
-  margin: 0 auto;
+  margin: 5rem auto;
   font-size: 3.5rem;
   color: white;
 }
@@ -167,15 +170,37 @@ body, html {
   position: relative;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 4fr 1fr 4fr;
-  gap: 1rem;
-  grid-template-areas: "palamazon palamazon entasia-background entasia-background" "palamazon-background palamazon-background entasia-background entasia-background" "palamazon-background palamazon-background entasia entasia";
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  z-index: 2;
+  background-color: #232323;
 }
-@media (max-width: 1200px) {
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background: #141414;
+  transform: skew(5deg, 5deg);
+  z-index: -1;
+}
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background: #141414;
+  transform: skew(-5deg, -5deg);
+  z-index: -1;
+}
+@media (max-width: 1500px) {
   .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid {
     width: 95%;
   }
@@ -187,6 +212,8 @@ body, html {
   }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item {
+  flex: 1 0 calc(100% / 3);
+  margin: 1rem;
   background-color: #414141;
   display: flex;
   align-items: center;
@@ -194,6 +221,7 @@ body, html {
   background-size: cover;
   background-position: center center;
   position: relative;
+  height: 500px;
 }
 @media (max-width: 980px) {
   .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item {
@@ -309,17 +337,17 @@ body, html {
   }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-palamazon {
-  grid-area: palamazon;
+  order: 1;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-entasia {
-  grid-area: entasia;
+  order: 4;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-palamazon-background {
-  grid-area: palamazon-background;
+  order: 2;
   background-image: url("../img/palamazon.PNG");
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-entasia-background {
-  grid-area: entasia-background;
+  order: 3;
   background-image: url("../img/entasia.PNG");
 }
 
