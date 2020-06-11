@@ -157,9 +157,14 @@ body, html {
 }
 .ness-main .ness-section.ness-gallery .section-title {
   text-align: center;
-  margin: 5rem auto;
   font-size: 3.5rem;
   color: white;
+  margin: 0 0 2rem;
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .section-title {
+    margin: 5rem 0;
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper {
   display: flex;
@@ -197,7 +202,7 @@ body, html {
   background-size: cover;
   background-position: center center;
   position: relative;
-  height: 500px;
+  height: 350px;
 }
 @media (max-width: 980px) {
   .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item {
