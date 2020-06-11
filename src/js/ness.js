@@ -19,7 +19,7 @@ function waves () {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0xc0c0c,
+        color: 0x232323,
         shininess: 0.00,
         waveHeight: 6.00,
         waveSpeed: 0.85,

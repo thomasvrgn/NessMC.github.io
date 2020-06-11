@@ -41,56 +41,55 @@ body, html {
   flex-flow: row wrap;
   flex: 1 0 100%;
   text-align: center;
-  position: relative;
+  z-index: 10;
+}
+.ness-main .ness-header .ness-wrapper .ness-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: -1;
 }
 .ness-main .ness-header .ness-wrapper .ness-container div {
   margin: 3.5rem 0;
 }
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-text {
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-text-container {
   flex: 1 0 100%;
 }
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-title {
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-text-container .ness-text {
+  width: 540px;
+  margin: 0 auto;
+  transform: rotate(180deg);
+  border: solid white 5px;
+  padding: 1rem 0;
+}
+@media (max-width: 640px) {
+  .ness-main .ness-header .ness-wrapper .ness-container div.ness-text-container .ness-text {
+    border: none;
+  }
+}
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-text-container .ness-text .ness-title {
   color: white;
+  transform: rotate(180deg);
   font-size: 5rem;
   z-index: 3;
   position: relative;
+  bottom: 0.5rem;
 }
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-title::after {
-  content: "";
-  position: absolute;
-  bottom: -32.5px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: solid white 5px;
-  z-index: -3;
-  width: 550px;
-  height: 150%;
-}
-@media (max-width: 768px) {
-  .ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-title::after {
-    width: 0;
-    height: 0;
-  }
-}
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-paragraph {
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-text-container .ness-text .ness-paragraph {
   position: relative;
   z-index: 5;
-  color: white;
   font-size: 2rem;
   font-family: monospace;
-  top: 12.5px;
-}
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-text .ness-paragraph::after {
-  content: "";
-  position: absolute;
-  bottom: -12.5px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-  background-color: #232323;
-  border: solid #232323 5px;
-  width: 225px;
-  height: 100%;
+  color: white;
+  transform: rotate(180deg);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
 }
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons {
   flex: 1 0 calc(100% / 3);
@@ -125,7 +124,6 @@ body, html {
   font-size: 1.75rem;
 }
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button .ness-button-name {
-  margin: 0 0 0 0.5rem;
   margin-top: 1px;
   vertical-align: middle;
 }
