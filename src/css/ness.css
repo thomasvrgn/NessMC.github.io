@@ -108,7 +108,6 @@ body, html {
   font-weight: 600;
   background-color: #414141;
   padding: 1rem 2rem;
-  transition: background-color 0.1s ease;
 }
 @media (max-width: 768px) {
   .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button {
@@ -159,7 +158,7 @@ body, html {
   text-align: center;
   font-size: 3.5rem;
   color: white;
-  margin: 0 0 2rem;
+  margin: 5rem auto 2rem;
 }
 @media (max-width: 980px) {
   .ness-main .ness-section.ness-gallery .section-title {

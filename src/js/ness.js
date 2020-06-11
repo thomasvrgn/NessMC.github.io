@@ -10,11 +10,6 @@ document.addEventListener('readystatechange', () => {
             waves()
             status = true
         }
-        new fullpage('.ness-main', {
-            navigation: true,
-            responsiveWidth: 980,
-            parallax: true
-        })
     }
 })
 
