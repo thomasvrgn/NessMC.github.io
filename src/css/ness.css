@@ -176,28 +176,6 @@ body, html {
   z-index: 2;
   background-color: #232323;
 }
-.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid::after {
-  content: "";
-  position: absolute;
-  left: -5px;
-  right: -5px;
-  top: -5px;
-  bottom: -5px;
-  background: #141414;
-  transform: skew(5deg, 5deg);
-  z-index: -1;
-}
-.ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid::before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  right: -5px;
-  top: -5px;
-  bottom: -5px;
-  background: #141414;
-  transform: skew(-5deg, -5deg);
-  z-index: -1;
-}
 @media (max-width: 1500px) {
   .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid {
     width: 95%;
