@@ -2,11 +2,26 @@
                   NESS
 ///////////////////////////////////////*/
 
-
+let status = false
 
 document.addEventListener('readystatechange', () => {
     if (document.readyState === 'complete') {
-        waves()
+        if (!window.matchMedia('(max-width: 768px)').matches) {
+            waves()
+            status = true
+        }
+    }
+})
+
+window.addEventListener('resize', () => {
+    if (!window.matchMedia('(max-width: 768px)').matches) {
+        if (!status) {
+            waves()
+            status = true
+        }
+    } else {
+        document.getElementsByClassName('vanta-canvas')[0].remove()
+        status = false
     }
 })
 
