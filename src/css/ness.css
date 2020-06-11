@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -324,11 +324,11 @@ body, html {
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-palamazon-background {
   order: 2;
-  background-image: url("../img/palamazon.PNG");
+  background-image: url("../img/palamazon.webp");
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-grid .ness-item.ness-entasia-background {
   order: 3;
-  background-image: url("../img/entasia.PNG");
+  background-image: url("../img/entasia.webp");
 }
 
 ::-webkit-scrollbar {
