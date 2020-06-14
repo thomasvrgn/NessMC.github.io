@@ -20,7 +20,9 @@ window.addEventListener('resize', () => {
             status = true
         }
     } else {
-        document.getElementsByClassName('vanta-canvas')[0].remove()
+        if (document.getElementsByClassName('vanta-canvas')[0]) {
+            document.getElementsByClassName('vanta-canvas')[0].remove()
+        }
         status = false
     }
 })
