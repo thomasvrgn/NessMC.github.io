@@ -151,6 +151,43 @@ body, html {
   flex: 1 0 100%;
   background: #232323;
 }
+.ness-main .ness-section.ness-introduction .ness-container {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+.ness-main .ness-section.ness-introduction .ness-container .ness-item {
+  display: flex;
+  flex: 1 0 calc(100% / 2);
+  align-items: center;
+  justify-content: center;
+}
+.ness-main .ness-section.ness-introduction .ness-container .ness-item .ness-text {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+.ness-main .ness-section.ness-introduction .ness-container .ness-item .ness-text .ness-title {
+  font-size: 4rem;
+  color: white;
+  margin: 0 0 2rem 0;
+}
+.ness-main .ness-section.ness-introduction .ness-container .ness-item .ness-text .ness-paragraph {
+  width: 450px;
+  color: white;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+.ness-main .ness-section.ness-introduction .ness-container .ness-item .ness-image {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
+}
+.ness-main .ness-section.ness-introduction .ness-container .ness-item .ness-image:hover {
+  top: -1rem;
+}
 .ness-main .ness-section.ness-gallery {
   align-items: unset;
 }
@@ -167,32 +204,58 @@ body, html {
   flex: 1 0 calc(100% / 2);
   position: relative;
 }
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item {
+    flex: 1 0 100%;
+  }
+}
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons {
   margin: 3rem 3rem;
   position: absolute;
   bottom: 0;
 }
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons {
+    width: 100%;
+    margin: 3rem auto;
+    justify-content: center;
+    display: flex;
+  }
+}
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons .ness-button {
+  position: relative;
   border: solid #329632;
   padding: 0.5rem 3rem;
   margin: 0 1rem;
   color: white;
   background-color: #329632;
   text-decoration: none;
+  z-index: 10;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons .ness-button:hover {
   background-color: #326e32;
   border: solid #326e32;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text {
+  z-index: 10;
   background-color: #232323;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.22'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text {
+    height: 750px;
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container {
   display: flex;
   flex: 1 0;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container {
+    text-align: center;
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container .ness-display {
   width: 50%;
@@ -203,6 +266,11 @@ body, html {
   margin-bottom: 1rem;
   position: relative;
 }
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container .ness-display .ness-title {
+    margin-bottom: 3rem;
+  }
+}
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container .ness-display .ness-title::after {
   content: "";
   position: absolute;
@@ -211,6 +279,12 @@ body, html {
   width: 50px;
   height: 5px;
   background-color: white;
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container .ness-display .ness-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container .ness-display .ness-paragraph {
   color: #e6e6e6;
@@ -221,6 +295,11 @@ body, html {
   background-size: cover;
   position: relative;
   background-image: url("../img/palamazon.webp");
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background {
+    height: 750px;
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background .ness-box {
   position: absolute;
@@ -264,12 +343,22 @@ body, html {
 .ness-main .ness-section.ness-entasia .ness-background {
   background-image: url("../img/entasia.webp") !important;
 }
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-entasia .ness-background {
+    order: 2 !important;
+  }
+}
 .ness-main .ness-section.ness-entasia .ness-text {
   order: 2;
   background-color: #232323;
   -webkit-animation: entasia 14s linear infinite;
   animation: entasia 14s linear infinite;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.29' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-entasia .ness-text {
+    order: 1 !important;
+  }
 }
 .ness-main .ness-section.ness-other {
   z-index: 15;
