@@ -46,6 +46,6 @@ function init () {
 
 new fullpage('.ness-main', {
     navigation: true,
-    responsiveWidth: 768,
+    responsiveWidth: 980,
     parallax: true
 })
