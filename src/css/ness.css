@@ -165,6 +165,24 @@ body, html {
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item {
   display: flex;
   flex: 1 0 calc(100% / 2);
+  position: relative;
+}
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons {
+  margin: 3rem 3rem;
+  position: absolute;
+  bottom: 0;
+}
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons .ness-button {
+  border: solid #329632;
+  padding: 0.5rem 3rem;
+  margin: 0 1rem;
+  color: white;
+  background-color: #329632;
+  text-decoration: none;
+}
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons .ness-button:hover {
+  background-color: #326e32;
+  border: solid #326e32;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text {
   background-color: #232323;
