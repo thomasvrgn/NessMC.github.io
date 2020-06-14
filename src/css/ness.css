@@ -199,6 +199,7 @@ body, html {
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper {
   width: 100%;
+  height: 100%;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container {
   display: flex;
@@ -209,6 +210,7 @@ body, html {
   display: flex;
   flex: 1 0 calc(100% / 2);
   position: relative;
+  height: 100%;
 }
 @media (max-width: 980px) {
   .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item {

@@ -7,7 +7,7 @@ let status = false
 document.addEventListener('readystatechange', () => {
     if (document.readyState === 'complete') {
         if (!window.matchMedia('(max-width: 768px)').matches) {
-            waves()
+            init()
             status = true
         }
     }
@@ -16,7 +16,7 @@ document.addEventListener('readystatechange', () => {
 window.addEventListener('resize', () => {
     if (!window.matchMedia('(max-width: 768px)').matches) {
         if (!status) {
-            waves()
+            init()
             status = true
         }
     } else {
@@ -27,7 +27,7 @@ window.addEventListener('resize', () => {
     }
 })
 
-function waves () {
+function init () {
     VANTA.WAVES({
         el: ".ness-header",
         mouseControls: false,
@@ -42,4 +42,9 @@ function waves () {
         waveSpeed: 0.85,
         zoom: 0.98
     })
+    new fullpage('.ness-main', {
+        navigation: true,
+        responsiveWidth: 768,
+        parallax: true
+    });
 }
