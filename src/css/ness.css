@@ -121,6 +121,7 @@ body, html {
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button svg {
   vertical-align: middle;
   font-size: 1.75rem;
+  margin: 0 0.5rem 0 0;
 }
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button .ness-button-name {
   margin-top: 1px;
