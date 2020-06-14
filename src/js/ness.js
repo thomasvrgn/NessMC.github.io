@@ -42,9 +42,10 @@ function init () {
         waveSpeed: 0.85,
         zoom: 0.98
     })
-    new fullpage('.ness-main', {
-        navigation: true,
-        responsiveWidth: 768,
-        parallax: true
-    });
 }
+
+new fullpage('.ness-main', {
+    navigation: true,
+    responsiveWidth: 768,
+    parallax: true
+})
