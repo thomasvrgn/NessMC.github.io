@@ -169,8 +169,6 @@ body, html {
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text {
   background-color: #232323;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.22'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  -webkit-animation: backgroundScroll 7s linear infinite;
-  animation: backgroundScroll 7s linear infinite;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-text .ness-text-container {
   display: flex;
@@ -206,7 +204,7 @@ body, html {
   position: relative;
   background-image: url("../img/palamazon.webp");
 }
-.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background span {
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background .ness-box {
   position: absolute;
   bottom: -25%;
   left: 0;
@@ -220,7 +218,7 @@ body, html {
   justify-content: center;
   text-align: center;
 }
-.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background span p {
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background .ness-box .ness-paragraph {
   width: 50%;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background::before {
@@ -230,17 +228,33 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
   transition: background-color 0.5s ease;
 }
-.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background:hover span {
+.ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background:hover .ness-box {
   bottom: 0;
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item.ness-background:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.ness-main .ness-section.ness-palamazon .ness-text {
+  -webkit-animation: palamazon 7s linear infinite;
+  animation: palamazon 7s linear infinite;
+}
 .ness-main .ness-section.ness-entasia {
   z-index: 10;
+}
+.ness-main .ness-section.ness-entasia .ness-background {
+  background-image: url("../img/entasia.webp") !important;
+}
+.ness-main .ness-section.ness-entasia .ness-text {
+  order: 2;
+  background-color: #232323;
+  -webkit-animation: entasia 14s linear infinite;
+  animation: entasia 14s linear infinite;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.29' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+.ness-main .ness-section.ness-other {
+  z-index: 15;
 }
 
 ::-webkit-scrollbar {
@@ -255,12 +269,20 @@ body, html {
   background: #414141;
 }
 
-@keyframes backgroundScroll {
+@keyframes palamazon {
   from {
     background-position: 0 0;
   }
   to {
     background-position: -180px -180px;
+  }
+}
+@keyframes entasia {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 180px 180px;
   }
 }
 
