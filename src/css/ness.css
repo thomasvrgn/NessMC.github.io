@@ -168,6 +168,11 @@ body, html {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 980px) {
+  .ness-main .ness-section.ness-introduction .ness-blocks {
+    display: none;
+  }
+}
 .ness-main .ness-section.ness-introduction .ness-blocks .ness-block {
   position: absolute;
   height: 100px;
