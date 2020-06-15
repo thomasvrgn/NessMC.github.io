@@ -47,5 +47,6 @@ function init () {
 new fullpage('.ness-main', {
     navigation: true,
     responsiveWidth: 980,
-    parallax: true
+    parallax: true,
+    anchors: ['ness-top', 'ness-introduction', 'ness-palamazon', 'ness-entasia', 'ness-other']
 })

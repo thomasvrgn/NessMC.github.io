@@ -14,6 +14,23 @@ body, html {
   height: 100%;
 }
 
+.ness-container-top {
+  position: fixed;
+  z-index: 10000000;
+  bottom: 1.5%;
+  right: 0;
+}
+.ness-container-top .ness-button {
+  margin: 1.5rem;
+  font-size: 4rem;
+  color: white;
+  opacity: 0.1;
+  transition: opacity 0.2s ease;
+}
+.ness-container-top .ness-button:hover {
+  opacity: 0.5;
+}
+
 .ness-main {
   display: flex;
   flex-flow: row wrap;
