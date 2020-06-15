@@ -156,8 +156,55 @@ body, html {
   flex-flow: row wrap;
   flex: 1 0 100%;
   background: #232323;
+  position: relative;
+}
+.ness-main .ness-section.ness-introduction {
+  background: linear-gradient(90deg, #232323 21px, transparent 1%) center, linear-gradient(#232323 21px, transparent 1%) center, #a799cc;
+  background-size: 22px 22px;
+}
+.ness-main .ness-section.ness-introduction .ness-blocks {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.ness-main .ness-section.ness-introduction .ness-blocks .ness-block {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  bottom: 0;
+  background-color: #202020;
+  border-radius: 15px;
+}
+.ness-main .ness-section.ness-introduction .ness-blocks .ness-block:nth-child(1) {
+  left: 75%;
+  top: 65%;
+  transform: rotate(15deg);
+}
+.ness-main .ness-section.ness-introduction .ness-blocks .ness-block:nth-child(2) {
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  top: 35%;
+  transform: rotate(-10deg);
+}
+.ness-main .ness-section.ness-introduction .ness-blocks .ness-block:nth-child(3) {
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  top: 75%;
+  transform: rotate(35deg);
+}
+.ness-main .ness-section.ness-introduction .ness-blocks .ness-block:nth-child(4) {
+  left: 80%;
+  width: 150px;
+  height: 150px;
+  top: 15%;
+  transform: rotate(-20deg);
 }
 .ness-main .ness-section.ness-introduction .ness-container {
+  z-index: 10;
+  position: relative;
   width: 75%;
   display: flex;
   flex-flow: row wrap;
@@ -379,10 +426,8 @@ body, html {
 }
 .ness-main .ness-section.ness-entasia .ness-text {
   order: 2;
-  background-color: #232323;
-  -webkit-animation: entasia 14s linear infinite;
-  animation: entasia 14s linear infinite;
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.29' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E") !important;
+  -webkit-animation: entasia 7s linear infinite;
+  animation: entasia 7s linear infinite;
 }
 @media (max-width: 1280px) {
   .ness-main .ness-section.ness-entasia .ness-text {
@@ -419,6 +464,17 @@ body, html {
   }
   to {
     background-position: 180px 180px;
+  }
+}
+@keyframes block {
+  from {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-10%) rotate(0);
+  }
+  to {
+    transform: translateY(0) rotate(0);
   }
 }
 
