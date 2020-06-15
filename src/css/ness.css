@@ -150,6 +150,31 @@ body, html {
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:focus.ness-github {
   background-color: #24292e;
 }
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-scroll {
+  position: relative;
+  flex: 1 0 100%;
+}
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-scroll .ness-mouse {
+  position: absolute;
+  height: 112px;
+  width: 68px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid white 4px;
+  border-radius: 50px;
+}
+.ness-main .ness-header .ness-wrapper .ness-container div.ness-scroll .ness-mouse::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  animation: mouse 2s ease infinite;
+}
 .ness-main .ness-section {
   min-height: 100%;
   display: flex;
@@ -471,15 +496,14 @@ body, html {
     background-position: 180px 180px;
   }
 }
-@keyframes block {
+@keyframes mouse {
   from {
-    transform: translateY(0) rotate(0);
-  }
-  50% {
-    transform: translateY(-10%) rotate(0);
+    top: 15%;
+    opacity: 1;
   }
   to {
-    transform: translateY(0) rotate(0);
+    top: 50%;
+    opacity: 0;
   }
 }
 
