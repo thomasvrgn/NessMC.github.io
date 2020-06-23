@@ -48,5 +48,8 @@ new fullpage('.ness-main', {
     navigation: true,
     responsiveWidth: 980,
     parallax: true,
-    anchors: ['ness-top', 'ness-introduction', 'ness-palamazon', 'ness-entasia', 'ness-other']
+    anchors: ['ness-top', 'ness-introduction', 'ness-palamazon', 'ness-entasia', 'ness-other'],
+    licenseKey: 'KGl8O!P%k0'
 })
+
+console.clear()
