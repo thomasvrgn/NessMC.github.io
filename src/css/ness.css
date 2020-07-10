@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap");
+@import url("../fonts/fonts.css");
 * {
   margin: 0;
   padding: 0;
@@ -13,23 +13,6 @@ body {
 body,
 html {
   height: 100%;
-}
-
-.ness-container-top {
-  position: fixed;
-  z-index: 10000000;
-  bottom: 1.5%;
-  right: 0;
-}
-.ness-container-top .ness-button {
-  margin: 1.5rem;
-  font-size: 4rem;
-  color: white;
-  opacity: 0.1;
-  transition: opacity 0.2s ease;
-}
-.ness-container-top .ness-button:hover {
-  opacity: 0.5;
 }
 
 .ness-main {
@@ -167,31 +150,6 @@ html {
 }
 .ness-main .ness-header .ness-wrapper .ness-container div.ness-buttons .ness-button:focus.ness-github {
   background-color: #24292e;
-}
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-scroll {
-  position: relative;
-  flex: 1 0 100%;
-}
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-scroll .ness-mouse {
-  position: absolute;
-  height: 112px;
-  width: 68px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: solid white 4px;
-  border-radius: 50px;
-}
-.ness-main .ness-header .ness-wrapper .ness-container div.ness-scroll .ness-mouse::after {
-  content: "";
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: white;
-  animation: mouse 2s ease infinite;
 }
 .ness-main .ness-section {
   min-height: 100%;
@@ -512,16 +470,6 @@ html {
   }
   to {
     background-position: 180px 180px;
-  }
-}
-@keyframes mouse {
-  from {
-    top: 15%;
-    opacity: 1;
-  }
-  to {
-    top: 50%;
-    opacity: 0;
   }
 }
 
