@@ -454,8 +454,21 @@ html {
   gap: 2rem;
   grid-template-areas: "image1 image1 image1 image2 image2" "image3 image3 image4 image4 image4";
 }
+@media (max-width: 1280px) {
+  .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item {
   position: relative;
+}
+@media (max-width: 1280px) {
+  .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item {
+    display: flex;
+    flex: 1 0 100%;
+    margin: 1rem 0;
+  }
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item .ness-projects-image {
   width: 100%;
@@ -483,6 +496,11 @@ html {
   color: white;
   z-index: 10;
 }
+@media (max-width: 1450px) {
+  .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item .ness-projects-informations {
+    width: 50%;
+  }
+}
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item .ness-projects-informations .ness-projects-text .ness-projects-title {
   font-size: 2rem;
 }
@@ -499,18 +517,14 @@ html {
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:nth-child(1) {
   grid-area: image1;
-  background-color: red;
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:nth-child(2) {
   grid-area: image2;
-  background-color: green;
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:nth-child(3) {
-  background-color: yellow;
   grid-area: image3;
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:nth-child(4) {
-  background-color: blue;
   grid-area: image4;
 }
 
