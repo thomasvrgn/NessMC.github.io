@@ -481,10 +481,20 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  transition: background-color 0.2s ease;
+  width: 0%;
+  height: 0%;
+  background-color: #333333;
+  transition: all 0.5s ease;
+}
+.ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  background-color: #333333;
+  transition: all 0.5s ease;
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item .ness-projects-informations {
   position: absolute;
@@ -493,7 +503,7 @@ html {
   transform: translate(-50%, -50%);
   width: 400px;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.5s ease;
   color: white;
   z-index: 10;
 }
@@ -514,7 +524,12 @@ html {
   opacity: 1;
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:hover::after {
-  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+}
+.ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:hover::before {
+  height: 100%;
+  width: 100%;
 }
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:nth-child(1) {
   grid-area: image1;
