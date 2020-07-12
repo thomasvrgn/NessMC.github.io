@@ -543,6 +543,78 @@ html {
 .ness-main .ness-section.ness-projects .ness-projects-container .ness-projects-grid .ness-projects-item:nth-child(4) {
   grid-area: image4;
 }
+.ness-main .ness-section.ness-timeline {
+  padding: 5rem 0;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: white;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container .ness-timeline-item {
+  display: flex;
+  flex: 1 0 100%;
+  position: relative;
+  margin: 1rem 0;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container .ness-timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  border-radius: 50%;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container .ness-timeline-item.ness-timeline-right {
+  justify-content: flex-end;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container .ness-timeline-item.ness-timeline-right .ness-timeline-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: solid transparent 10px;
+  border-bottom: solid transparent 10px;
+  border-right: solid #e0e0e0 10px;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container .ness-timeline-item.ness-timeline-left {
+  justify-content: flex-start;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container .ness-timeline-item.ness-timeline-left .ness-timeline-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: solid transparent 10px;
+  border-bottom: solid transparent 10px;
+  border-left: solid #e0e0e0 10px;
+}
+.ness-main .ness-section.ness-timeline .ness-timeline-container .ness-timeline-item .ness-timeline-text {
+  position: relative;
+  background-color: #e0e0e0;
+  width: 40%;
+}
 
 ::-webkit-scrollbar {
   width: 15px;
