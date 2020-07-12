@@ -297,6 +297,8 @@ html {
     margin: 3rem auto;
     justify-content: center;
     display: flex;
+    flex-flow: row wrap;
+    padding: 0 5rem;
   }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons .ness-button {
@@ -308,6 +310,14 @@ html {
   background-color: #329632;
   text-decoration: none;
   z-index: 10;
+}
+@media (max-width: 480px) {
+  .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons .ness-button {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
 }
 .ness-main .ness-section.ness-gallery .ness-wrapper .ness-container .ness-item .ness-buttons .ness-button:hover {
   background-color: #326e32;
